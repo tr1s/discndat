@@ -1,0 +1,19 @@
+/* Imports
+========================================================================== */
+
+@import "../styles/abstracts/mixins.scss";
+
+/* Footer styles
+========================================================================== */
+
+.footer {
+  padding: 1.5rem;
+  background: var(--black);
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav a.link {
+    color: var(--white);
+  }
+}
