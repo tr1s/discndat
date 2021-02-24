@@ -3,20 +3,23 @@
 
 .main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .main .info {
   width: 100%;
   max-width: 1000px;
+  margin: 0 auto;
   h3 {
     width: 100%;
     max-width: 680px;
+    margin-bottom: 1rem;
     font-weight: 400;
     line-height: 1.4;
-    margin-bottom: 1rem;
     strong {
       font-weight: 700;
+      display: table;
     }
   }
   p {
@@ -25,5 +28,31 @@
 }
 
 .main .contact {
-  border: 1px solid blue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  h2 {
+    width: 100%;
+    max-width: 360px;
+    padding-top: 10rem;
+    margin-right: 20rem;
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.main .map {
+  border-top: 3px solid var(--grey);
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+    // height: 100%;
+    // max-height: 400px;
+    // object-fit: cover;
+  }
 }
