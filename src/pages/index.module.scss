@@ -1,3 +1,8 @@
+/* Imports
+========================================================================== */
+
+@import '../styles/abstracts/mixins.scss';
+
 /* Index/Home page styles
 ========================================================================== */
 
@@ -11,15 +16,24 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  @include respond-to('mobile-large') {
+    text-align: center;
+  }
   h3 {
     width: 100%;
     max-width: 680px;
     margin-bottom: 1rem;
     font-weight: 400;
     line-height: 1.4;
+    @include respond-to('mobile-large') {
+      margin-bottom: 2rem;
+    }
     strong {
       font-weight: 700;
       display: table;
+      @include respond-to('tablet-large') {
+        display: initial;
+      }
     }
   }
   p {
@@ -31,13 +45,31 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 16rem;
-  padding-bottom: 16rem;
+  padding: 16rem 0;
+  @include respond-to('tablet-large') {
+    padding: 0 0 10rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
   h2 {
     width: 100%;
     max-width: 360px;
     padding-top: 10rem;
     margin-right: 20rem;
+    @include respond-to('desktop-13') {
+      margin-right: 5rem;
+    }
+    @include respond-to('tablet-large') {
+      margin-bottom: 4rem;
+      margin-right: 0;
+      text-align: center;
+    }
+    @include respond-to('mobile-large') {
+      padding-top: 8rem;
+      font-size: 2.6rem;
+      width: 100%;
+      max-width: 240px;
+    }
     span {
       font-weight: 700;
     }
@@ -46,13 +78,24 @@
 
 .main .map {
   border-top: 3px solid var(--grey);
+  background-image: url('/map.png');
+  height: 500px;
+  .location {
+    background: var(--white);
+    width: 100%;
+    max-width: 423px;
+    padding: 5rem;
+    text-align: center;
+    border: 3px solid var(--grey);
+    border-radius: var(--border-radius);
+    position: relative;
+    top: -40rem;
+    img {
+      margin: 0 auto;
+      padding: 5rem 0;
+    }
+  }
   a {
     display: block;
-  }
-  img {
-    display: block;
-    // height: 100%;
-    // max-height: 400px;
-    // object-fit: cover;
   }
 }

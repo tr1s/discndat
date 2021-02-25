@@ -11,7 +11,7 @@ export default function Home() {
         <div className="inner-wrapper">
           <div className={styles.info}>
             <h3>
-              <strong>For over 30 years...</strong> Disc n Dat has provided top quality residential
+              <strong>For over 30 years,</strong> Disc n Dat has provided top quality residential
               and commercial custom electronics from the best manufacturers to suit your needs.
             </h3>
             <p>
@@ -33,15 +33,37 @@ export default function Home() {
           </div>
         </div>
 
-        <figure class={styles.map}>
-          <a
-            href="https://www.google.com/maps/place/Disc+'N+Dat+Custom+Electronics/@42.3038963,-82.871485,17z/data=!3m1!4b1!4m5!3m4!1s0x883b2c6cadcbb7e7:0x3efd83593ddfd15e!8m2!3d42.3038963!4d-82.8692963"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/map.png" alt="" />
-          </a>
-        </figure>
+        <a
+          href="https://www.google.com/maps/place/Disc+'N+Dat+Custom+Electronics/@42.3038963,-82.871485,17z/data=!3m1!4b1!4m5!3m4!1s0x883b2c6cadcbb7e7:0x3efd83593ddfd15e!8m2!3d42.3038963!4d-82.8692963"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className={styles.map}>
+            <div className="inner-wrapper">
+              <div className={styles.location}>
+                <div>
+                  <p>Disc ‘n Dat</p>
+                  <p>Custom Electronics</p>
+                </div>
+                <div>
+                  <p>1740 Manning Rd</p>
+                  <p>Windsor, ON N8N 2L9</p>
+                </div>
+                <div>
+                  <p>519-972-1555</p>
+                  <p>info@discndat.co</p>
+                </div>
+                <img src="/disc.svg" alt="" />
+                <div>
+                  <p>Monday – Closed</p>
+                  <p>Tuesday – Friday – 9am to 5pm</p>
+                  <p>Saturday – 9am to 4pm</p>
+                  <p>Sunday – Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
       </section>
     </Layout>
   );

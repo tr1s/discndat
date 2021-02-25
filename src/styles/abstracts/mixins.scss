@@ -11,7 +11,7 @@
       @content;
     }
   } @else if $breakpoint== 'mobile-large' {
-    @media (max-width: 414px) {
+    @media (max-width: 480px) {
       @content;
     }
   } @else if $breakpoint== 'awkward' {
