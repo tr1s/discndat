@@ -15,17 +15,17 @@ export default function Form() {
 
       <label htmlFor="name">
         Name *
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required />
       </label>
 
       <label htmlFor="email">
         Email *
-        <input type="text" name="email" id="email" />
+        <input type="text" name="email" id="email" required />
       </label>
 
-      <label htmlFor="number">
+      <label htmlFor="phone">
         Phone number *
-        <input type="number" name="number" id="number" />
+        <input type="tel" name="phone" id="phone" required />
       </label>
 
       <label htmlFor="message" className={styles.message}>
@@ -35,6 +35,7 @@ export default function Form() {
           name="number"
           id="number"
           placeholder="What services you are interested in...?"
+          required
         />
       </label>
 
