@@ -3,6 +3,7 @@ import styles from './form.module.scss';
 export default function Form() {
   return (
     <form
+      id="contact"
       name="Disc n Dat Contact"
       method="post"
       data-netlify="true"

@@ -1,0 +1,61 @@
+/* Imports
+========================================================================== */
+
+@import '../styles/abstracts/mixins.scss';
+
+/* Location styles
+========================================================================== */
+
+.location {
+  border-top: 3px solid var(--grey);
+  background-image: url('/map.png');
+  background-position: 100% 75%;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  @include respond-to('desktop-13') {
+    background-position: 100% 80px;
+  }
+  @include respond-to('tablet-large') {
+    background-position: 37% 80px;
+  }
+  @include respond-to('mobile-large') {
+    background-position: 45% 80px;
+  }
+  .mapLink {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .locationCard {
+    background: var(--white);
+    width: 100%;
+    max-width: 423px;
+    padding: 5rem;
+    text-align: center;
+    border: 3px solid var(--grey);
+    border-radius: var(--border-radius);
+    position: relative;
+    top: -40rem;
+    @include respond-to('desktop-13') {
+      top: -30rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .locationInfo:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    .locationInfo p:first-child {
+      font-weight: 700;
+    }
+    img {
+      margin: 0 auto;
+      padding: 5rem 0;
+    }
+  }
+  a {
+    display: block;
+  }
+}

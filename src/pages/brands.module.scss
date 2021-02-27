@@ -1,0 +1,30 @@
+/* Imports
+========================================================================== */
+
+@import '../styles/abstracts/mixins.scss';
+
+/* Brands styles
+========================================================================== */
+
+.main .info {
+  h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+}
+
+.main .logos {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 20%);
+  img {
+    display: block;
+  }
+}

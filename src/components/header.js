@@ -1,7 +1,7 @@
-import Link from "./activeLink";
-import Image from "next/image";
+import Link from './activeLink';
+import Image from 'next/image';
 
-import styles from "./header.module.scss";
+import styles from './header.module.scss';
 
 export default function Header() {
   return (
