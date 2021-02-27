@@ -11,7 +11,7 @@ export default function Form() {
       className={styles.form}
     >
       {/* Hidden input for Netlify */}
-      <input type="hidden" name="Disc n Dat Contact" value="contact" />
+      <input type="hidden" name="form-name" value="contact" />
 
       <label htmlFor="name">
         Name *
