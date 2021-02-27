@@ -30,10 +30,17 @@
     }
     strong {
       font-weight: 700;
-      display: table;
       @include respond-to('tablet-large') {
         display: initial;
       }
+    }
+    span {
+      color: var(--blue);
+      background: var(--soft-accent);
+      border: 1px solid var(--grey);
+      border-radius: var(--border-radius);
+      padding: 0.3rem 0.7rem;
+      font-weight: 700;
     }
   }
   p {
@@ -46,8 +53,11 @@
   display: flex;
   justify-content: center;
   padding: 16rem 0;
+  @include respond-to('desktop-13') {
+    padding-bottom: 44.7rem;
+  }
   @include respond-to('tablet-large') {
-    padding: 0 0 10rem 0;
+    padding: 0 0 39.7rem 0;
     flex-direction: column;
     align-items: center;
   }
@@ -76,11 +86,30 @@
   }
 }
 
-.main .map {
+.main .location {
   border-top: 3px solid var(--grey);
   background-image: url('/map.png');
+  background-position: 100% 75%;
+  background-size: cover;
   height: 500px;
-  .location {
+  position: relative;
+  @include respond-to('desktop-13') {
+    background-position: 100% 80px;
+  }
+  @include respond-to('tablet-large') {
+    background-position: 37% 80px;
+  }
+  @include respond-to('mobile-large') {
+    background-position: 45% 80px;
+  }
+  .mapLink {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .locationCard {
     background: var(--white);
     width: 100%;
     max-width: 423px;
@@ -90,6 +119,17 @@
     border-radius: var(--border-radius);
     position: relative;
     top: -40rem;
+    @include respond-to('desktop-13') {
+      top: -30rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .locationInfo:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    .locationInfo p:first-child {
+      font-weight: 700;
+    }
     img {
       margin: 0 auto;
       padding: 5rem 0;

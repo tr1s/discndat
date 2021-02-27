@@ -2,7 +2,17 @@ import styles from './form.module.scss';
 
 export default function Form() {
   return (
-    <form action="" class={styles.form}>
+    <form
+      name="Disc n Dat Contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      action=""
+      className={styles.form}
+    >
+      {/* Hidden input for Netlify */}
+      <input type="hidden" name="Disc n Dat Contact" value="contact" />
+
       <label htmlFor="name">
         Name *
         <input type="text" name="name" id="name" />
@@ -28,11 +38,11 @@ export default function Form() {
         />
       </label>
 
-      <label htmlFor="commercial" class={styles.checkbox}>
+      <label htmlFor="commercial" className={styles.checkbox}>
         Commercial
         <input type="checkbox" id="commercial" name="commercial" />
       </label>
-      <label htmlFor="residential" class={styles.checkbox}>
+      <label htmlFor="residential" className={styles.checkbox}>
         Residential
         <input type="checkbox" id="residential" name="residential" />
       </label>

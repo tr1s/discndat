@@ -19,6 +19,7 @@
   --soft-accent: #fffdd5;
 
   --black: #181818;
+  --black: #141a20;
   --black-true: #000;
   --grey: #dedede;
   --grey-dark: #626262;
@@ -96,6 +97,10 @@ main {
   }
 }
 
+.bold {
+  font-weight: 700;
+}
+
 /* Global typography styles
 ========================================================================== */
 
@@ -119,7 +124,7 @@ h1 {
 h2 {
   font-size: 4.2rem;
   font-weight: 100;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 h3 {
   font-size: 2.6rem;
