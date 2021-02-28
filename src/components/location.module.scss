@@ -8,11 +8,15 @@
 
 .location {
   border-top: 3px solid var(--grey);
-  background-image: url('/map.png');
+  background-image: url('/map.jpg');
   background-position: 100% 75%;
   background-size: cover;
   height: 500px;
   position: relative;
+  &:hover,
+  &:focus {
+    border-top: 3px solid var(--primary);
+  }
   @include respond-to('desktop-13') {
     background-position: 100% 80px;
   }
@@ -43,6 +47,9 @@
       top: -30rem;
       left: 50%;
       transform: translateX(-50%);
+    }
+    @include respond-to('mobile-large') {
+      padding: 5rem 2rem;
     }
     .locationInfo:not(:last-child) {
       margin-bottom: 2.5rem;

@@ -14,7 +14,7 @@ const Helmet = ({ title, description, image, imageDescription, url }) => {
       <meta property="og:url" content={`https://discndat.co/${url}`} key="ogurl" />
       <meta
         property="og:image"
-        content={image ? image : 'https://i.imgur.com/CMlpCzE.jpg'}
+        content={image ? image : 'https://i.imgur.com/db2U35V.jpg'}
         key="ogimage"
       />
       <meta

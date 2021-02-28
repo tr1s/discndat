@@ -24,13 +24,13 @@ export default function Brands() {
 
             <ul className={styles.logos}>
               <li>
-                <img src="/brands/epson-2.svg" alt="" />
+                <img src="/brands/epson.svg" alt="" />
               </li>
               <li>
-                <img src="/brands/integra-2.svg" alt="" />
+                <img src="/brands/integra.svg" alt="" />
               </li>
               <li>
-                <img src="/brands/kef-1.svg" alt="" />
+                <img src="/brands/kef.svg" alt="" />
               </li>
               <li>
                 <img src="/brands/klipsch.svg" alt="" />
@@ -51,7 +51,13 @@ export default function Brands() {
                 <img src="/brands/sonos.svg" alt="" />
               </li>
               <li>
-                <img src="/brands/yamaha-2.svg" alt="" />
+                <img src="/brands/yamaha.svg" alt="" />
+              </li>
+              <li>
+                <img src="/brands/samsung.svg" alt="" />
+              </li>
+              <li>
+                <img src="/brands/honeywell.svg" alt="" />
               </li>
             </ul>
 
