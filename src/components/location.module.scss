@@ -47,6 +47,18 @@
     .locationInfo:not(:last-child) {
       margin-bottom: 2.5rem;
     }
+    .locationInfo a {
+      &:hover,
+      &:focus {
+        color: var(--secondary);
+      }
+    }
+    .locationInfo a p {
+      &:hover,
+      &:focus {
+        color: var(--secondary);
+      }
+    }
     .locationInfo p:first-child {
       font-weight: 700;
     }

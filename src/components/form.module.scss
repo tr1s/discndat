@@ -34,6 +34,7 @@
     color: var(--grey-dark);
   }
   label.checkbox {
+    cursor: pointer;
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: center;
@@ -45,6 +46,7 @@
   textarea {
     min-width: 100%;
     max-width: 100%;
+    min-height: 132px;
   }
   input,
   textarea {
@@ -64,11 +66,13 @@
       transition: 0.1s all ease;
       border: 3px solid var(--secondary);
       outline: none;
+      &::placeholder {
+        color: var(--grey-dark);
+      }
     }
     &::placeholder {
       font-weight: 400;
-      font-style: italic;
-      color: var(--grey-light);
+      color: lighten(lightgrey, 0);
     }
   }
   input[type='submit'] {

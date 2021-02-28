@@ -18,11 +18,19 @@ export default function Location() {
             <p>Custom Electronics</p>
           </div>
           <div className={styles.locationInfo}>
-            <p>1740 Manning Rd</p>
-            <p>Windsor, ON N8N 2L9</p>
+            <a
+              href="https://www.google.com/maps/place/Disc+'N+Dat+Custom+Electronics/@42.3038963,-82.871485,17z/data=!3m1!4b1!4m5!3m4!1s0x883b2c6cadcbb7e7:0x3efd83593ddfd15e!8m2!3d42.3038963!4d-82.8692963"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>1740 Manning Rd</p>
+              <p>Windsor, ON N8N 2L9</p>
+            </a>
           </div>
           <div className={styles.locationInfo}>
-            <a href="tel:519-972-1555">519-972-1555</a>
+            <a href="tel:519-972-1555" className="bold">
+              519-972-1555
+            </a>
             <a href="mailto:info@discndat.co">info@discndat.co</a>
           </div>
           <img src="/disc.svg" alt="" />
