@@ -1,5 +1,4 @@
 import Link from './activeLink';
-import Image from 'next/image';
 
 import styles from './header.module.scss';
 
@@ -11,7 +10,7 @@ export default function Header() {
 
       {/* Logo */}
       <figure className={styles.logo}>
-        <Image src="/logo.png" width="204" height="178" alt="" />
+        <img src="/logo.png" alt="" />
       </figure>
 
       {/* Nav */}

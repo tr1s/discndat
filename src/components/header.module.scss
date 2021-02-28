@@ -18,6 +18,9 @@
     left: 50%;
     transform: translateX(-50%);
     top: 0.3rem;
+    img {
+      width: 204px;
+    }
     @include respond-to('tablet-large') {
       top: 0;
       left: 75px;
