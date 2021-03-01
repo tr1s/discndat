@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className={styles.contact}>
       <h2>
-        <span>Contact Us</span> for a <span>Free Consultation</span>
+        <span>Contact Us</span> for a <span>Consultation</span>
       </h2>
 
       <Form />

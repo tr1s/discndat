@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from './activeLink';
 
 import styles from './footer.module.scss';
 

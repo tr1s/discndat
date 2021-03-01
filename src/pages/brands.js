@@ -24,6 +24,18 @@ export default function Brands() {
 
             <ul className={styles.logos}>
               <li>
+                <img src="/brands/sonos.svg" alt="" />
+              </li>
+              <li>
+                <img src="/brands/yamaha.svg" alt="" />
+              </li>
+              <li>
+                <img src="/brands/marantz.svg" alt="" />
+              </li>
+              <li>
+                <img src="/brands/onkyo.svg" alt="" />
+              </li>
+              <li>
                 <img src="/brands/epson.svg" alt="" />
               </li>
               <li>
@@ -36,22 +48,10 @@ export default function Brands() {
                 <img src="/brands/klipsch.svg" alt="" />
               </li>
               <li>
-                <img src="/brands/marantz.svg" alt="" />
-              </li>
-              <li>
                 <img src="/brands/monitor-audio.svg" alt="" />
               </li>
               <li>
-                <img src="/brands/onkyo.svg" alt="" />
-              </li>
-              <li>
                 <img src="/brands/panasonic.svg" alt="" />
-              </li>
-              <li>
-                <img src="/brands/sonos.svg" alt="" />
-              </li>
-              <li>
-                <img src="/brands/yamaha.svg" alt="" />
               </li>
               <li>
                 <img src="/brands/samsung.svg" alt="" />

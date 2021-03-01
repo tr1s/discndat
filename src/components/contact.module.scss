@@ -38,6 +38,12 @@
       width: 100%;
       max-width: 240px;
     }
+    span:first-child {
+      display: table;
+      @include respond-to('tablet-large') {
+        margin: 0 auto;
+      }
+    }
     span {
       font-weight: 700;
     }

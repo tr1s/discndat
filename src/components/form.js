@@ -16,7 +16,7 @@ export default function Form() {
 
       <label htmlFor="name">
         Name *
-        <input type="text" name="name" id="name" placeholder="John Doe" required />
+        <input type="text" name="name" id="name" placeholder="Gordie Howe" required />
       </label>
 
       <label htmlFor="email">
@@ -26,7 +26,13 @@ export default function Form() {
 
       <label htmlFor="phone">
         Phone number *
-        <input type="tel" name="phone" id="phone" placeholder="So we may contact you..." required />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Best number we can reach you at"
+          required
+        />
       </label>
 
       <label htmlFor="message" className={styles.message}>
