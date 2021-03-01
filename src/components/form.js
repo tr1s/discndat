@@ -39,8 +39,8 @@ export default function Form() {
         Message *
         <textarea
           type="textarea"
-          name="number"
-          id="number"
+          name="message"
+          id="message"
           placeholder="What services you are interested in?"
           required
         />
