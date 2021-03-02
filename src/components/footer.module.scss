@@ -1,0 +1,32 @@
+/* Imports
+========================================================================== */
+
+@import '../styles/abstracts/mixins.scss';
+
+/* Footer styles
+========================================================================== */
+
+.footer {
+  padding: 1.5rem;
+  background: var(--black);
+  z-index: 99;
+  @include respond-to('mobile-large') {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    @include respond-to('mobile-large') {
+      flex-direction: column;
+    }
+  }
+  nav a.link {
+    color: var(--white);
+    @include respond-to('mobile-large') {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

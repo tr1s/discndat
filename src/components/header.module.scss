@@ -1,0 +1,58 @@
+/* Imports
+========================================================================== */
+
+@import '../styles/abstracts/mixins.scss';
+
+/* Header styles
+========================================================================== */
+
+.header {
+  position: relative;
+  .banner {
+    height: 26px;
+    background: var(--black);
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.3rem;
+    img {
+      width: 204px;
+    }
+    @include respond-to('tablet-large') {
+      top: 0;
+      left: 75px;
+      width: 150px;
+    }
+    @include respond-to('mobile-large') {
+      position: relative;
+      left: 50%;
+      top: -2.4rem;
+    }
+  }
+
+  .nav {
+    padding-top: 3.5rem;
+    padding-bottom: 20rem;
+    @include respond-to('tablet-large') {
+      padding-bottom: 15rem;
+      padding-top: 2.5rem;
+    }
+    @include respond-to('mobile-large') {
+      padding-top: 0;
+      padding-bottom: 8rem;
+    }
+  }
+  .nav ul {
+    display: flex;
+    justify-content: flex-end;
+    @include respond-to('mobile-large') {
+      justify-content: center;
+    }
+  }
+  .nav ul li:not(:last-child) {
+    margin-right: 2rem;
+  }
+}

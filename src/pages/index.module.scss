@@ -1,0 +1,55 @@
+/* Imports
+========================================================================== */
+
+@import '../styles/abstracts/mixins.scss';
+
+/* Index/Home page styles
+========================================================================== */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .info {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  @include respond-to('mobile-large') {
+    text-align: center;
+  }
+  h3 {
+    width: 100%;
+    max-width: 680px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    @include respond-to('mobile-large') {
+      margin-bottom: 2rem;
+    }
+    strong {
+      font-weight: 700;
+      @include respond-to('tablet-large') {
+        display: initial;
+      }
+    }
+    span {
+      color: var(--blue);
+      background: var(--soft-accent);
+      border: 1px solid var(--grey);
+      border-radius: var(--border-radius);
+      padding: 0.3rem 0.7rem;
+      font-weight: 700;
+      @include respond-to('mobile') {
+        background: initial;
+        border: initial;
+        border-radius: initial;
+        padding: 0;
+      }
+    }
+  }
+  p {
+    font-weight: 400;
+  }
+}
