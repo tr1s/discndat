@@ -5,7 +5,7 @@ export default function Location() {
     <div className={styles.location}>
       <a
         className={styles.mapLink}
-        href="https://www.google.com/maps/place/Disc+'N+Dat+Custom+Electronics/@42.3038963,-82.871485,17z/data=!3m1!4b1!4m5!3m4!1s0x883b2c6cadcbb7e7:0x3efd83593ddfd15e!8m2!3d42.3038963!4d-82.8692963"
+        href="https://goo.gl/maps/ec3JeVydMrwmL2a99"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -19,12 +19,12 @@ export default function Location() {
           </div>
           <div className={styles.locationInfo}>
             <a
-              href="https://www.google.com/maps/place/Disc+'N+Dat+Custom+Electronics/@42.3038963,-82.871485,17z/data=!3m1!4b1!4m5!3m4!1s0x883b2c6cadcbb7e7:0x3efd83593ddfd15e!8m2!3d42.3038963!4d-82.8692963"
+              href="https://goo.gl/maps/ec3JeVydMrwmL2a99"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>1740 Manning Rd</p>
-              <p>Windsor, ON N8N 2L9</p>
+              <p>13350 Lanoue St.</p>
+              <p>Windsor, ON N8N 5E1</p>
             </a>
           </div>
           <div className={styles.locationInfo}>
@@ -35,9 +35,8 @@ export default function Location() {
           </div>
           <img src="/disc.svg" alt="" />
           <div>
-            <p>Monday – Closed</p>
-            <p className="bold">Tuesday – Friday – 9am to 5pm</p>
-            <p className="bold">Saturday – 9am to 4pm</p>
+            <p className="bold">Monday – Friday – 8am to 5pm</p>
+            <p className="bold">Saturday – by appointment only</p>
             <p>Sunday – Closed</p>
           </div>
         </div>
