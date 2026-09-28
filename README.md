@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Disc ‘n Dat
 
-## Getting Started
+Two-page brochure website: Home (`/`) and Brands (`/brands`). Both pages share
+the contact form and location section. Content lives in the source files; there
+is no CMS or online store.
 
-First, run the development server:
+## Existing stack
 
-```bash
+The lockfile pins Next.js 10.0.7, React 17.0.1, Sass 1.32.8, and the Netlify
+Next.js plugin 2.0.1. The repository uses npm. Netlify configuration is in
+`netlify.toml`; the contact form uses Netlify Forms.
+
+## Running this legacy checkout
+
+Verified on September 28, 2026 with **Node 16.12.0** on Apple Silicon:
+
+```sh
+npm ci --ignore-scripts
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run those commands with Node 16.12.0 selected for this shell. Node 24.21.0 fails
+with `ERR_PACKAGE_PATH_NOT_EXPORTED` in the locked PostCSS 8.1.7 dependency.
+Node 16 is end-of-life: this is a temporary way to reproduce the old site, not a
+supported runtime recommendation for new work or ongoing hosting.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+`--ignore-scripts` avoids the old optional native dependency installers. This
+site uses ordinary image elements and does not use `next/image`. The old Sharp
+native image optimizer is not initialized by this setup; adding image
+optimization requires a separate dependency update.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```sh
+npm run build
+npm run start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+There are no lint or test scripts. Verify Home and Brands in a browser, including
+the location section at mobile widths. Production builds still emit legacy
+PostCSS and Browserslist warnings.
 
-## Learn More
+## Content updates
 
-To learn more about Next.js, take a look at the following resources:
+- Address, hours, and map link: `src/components/location.js`
+- Location layout: `src/components/location.module.scss`
+- Homepage copy: `src/pages/index.js`
+- Brand list: `src/pages/brands.js`
+- Contact form: `src/components/form.js`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The location map is a static image (`public/map.jpg`) that links to
+Google Maps. The original 500px section and responsive positioning are preserved.
+The previous image is retained as `public/map-old.jpg` and is no longer displayed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The existing config runs `npm run build`, publishes `out`, and loads the legacy
+Netlify Next.js plugin. The Netlify account/build settings and active GitHub
+integration must be checked before deploying; a local Next build does not verify
+the Netlify adapter or form delivery. Pushing the connected branch may trigger a
+live deployment.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Keep a framework/runtime migration separate from small content updates. If the
+site is retained, update to supported dependencies and verify Netlify deployment
+and Forms together. If a replacement site is supplied, review its stack, form
+handling, hosting, and maintenance scope before replacing this project.

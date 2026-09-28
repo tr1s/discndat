@@ -5,9 +5,10 @@ export default function Location() {
     <div className={styles.location}>
       <a
         className={styles.mapLink}
-        href="https://goo.gl/maps/ec3JeVydMrwmL2a99"
+        href="https://www.google.com/maps/search/?api=1&query=Disc%20%27N%20Dat%20Custom%20Electronics%2C%20271%20Front%20Rd%2C%20LaSalle%2C%20ON%20N9J%201Z6"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="View Disc ‘n Dat at 271 Front Rd, LaSalle on Google Maps"
       >
         <div className={styles.map} />
       </a>
@@ -19,12 +20,12 @@ export default function Location() {
           </div>
           <div className={styles.locationInfo}>
             <a
-              href="https://goo.gl/maps/ec3JeVydMrwmL2a99"
+              href="https://www.google.com/maps/search/?api=1&query=Disc%20%27N%20Dat%20Custom%20Electronics%2C%20271%20Front%20Rd%2C%20LaSalle%2C%20ON%20N9J%201Z6"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>13350 Lanoue St.</p>
-              <p>Windsor, ON N8N 5E1</p>
+              <p>271 Front Rd</p>
+              <p>LaSalle, ON N9J 1Z6</p>
             </a>
           </div>
           <div className={styles.locationInfo}>
@@ -35,7 +36,7 @@ export default function Location() {
           </div>
           <img src="/disc.svg" alt="" />
           <div>
-            <p className="bold">Monday – Friday – 8am to 5pm</p>
+            <p className="bold">Monday – Friday – 9am to 5pm</p>
             <p className="bold">Saturday – by appointment only</p>
             <p>Sunday – Closed</p>
           </div>
